@@ -159,6 +159,8 @@ var Reveal = (function(){
 			if( event.keyCode >= 33 && event.keyCode <= 40 ) {
 				
 				switch( event.keyCode ) {
+					case 36: navigateHome(); break; // first slide (Home)
+					case 35: navigateEnd(); break; // last slide (End)
 					case 33: navigatePrev(); break; // prev for wireless presenter (PgUp)
 					case 34: navigateNext(); break; // next for wireless presenter (PgDn)
 					case 37: navigateLeft(); break; // left
@@ -669,6 +671,25 @@ var Reveal = (function(){
 	}
 
 	/**
+	 * Navigates to the first slide.
+	 */
+	function navigateHome() {
+		indexh = 0;
+		indexv = 0;
+		slide();
+	}
+
+	/**
+	 * Navigates to the first slide.
+	 */
+	function navigateEnd() {
+		var horizontalSlides = document.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR );
+		indexh = horizontalSlides.length-1;
+		indexv = 0;
+		slide();
+	}
+
+	/**
 	 * Navigates backwards, prioritized in the following order:
 	 * 1) Previous fragment
 	 * 2) Previous vertical slide
@@ -710,7 +731,9 @@ var Reveal = (function(){
 		navigateLeft: navigateLeft,
 		navigateRight: navigateRight,
 		navigateUp: navigateUp,
-		navigateDown: navigateDown
+		navigateDown: navigateDown,
+		navigateHome: navigateHome,
+		navigateEnd: navigateEnd
 	};
 	
 })();
