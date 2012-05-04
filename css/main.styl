@@ -1,3 +1,6 @@
+blue    = #ACF
+red     = #FCA
+
 a
   cursor pointer
 
@@ -23,4 +26,25 @@ a
     border none
     background none
     box-shadow none
+  table
+    display inline-block
+    margin-bottom 40px
+    th
+      font-weight bold
+    td,th
+      padding 5px 10px
+      text-align left
+    tr > *:not(:last-child)
+      border-right solid 2px rgba(255,255,255,0.3)
+    tr:not(:last-child) > *
+      border-bottom solid 2px rgba(255,255,255,0.3)
+  .dim
+    color gray
+  .end-fragment
+    text-align center
+    color gray
+  .true
+    color blue
+  .false
+    color red
 

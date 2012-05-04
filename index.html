@@ -51,7 +51,7 @@ alert("Hello, my name is " + name + "!");</code></pre>
 				</section>
 
 				<section>
-					<h2>How do I include </br>Javascript on my page?</h1>
+					<h2>How do I run </br>Javascript on my page?</h1>
 					<textarea class="code">...
 
 <script src="js/myScript.js"></script>
@@ -147,45 +147,338 @@ else {
 						<li>string</li>
 						<li>number</li>
 						<li>boolean</li>
-						<li>null</li>
-						<li>undefined</li>
+						<li class="dim">null</li>
+						<li class="dim">undefined</li>
 					</ul>
 				</section>
 
 				<section>
-					<h1>Types</h1>
-					<h3>string</h3>
-<pre><code class="javascript">var name = "Raine";</code></pre>
+					<h1>string</h1>
+<pre><code language="javascript">var first = "Raine";
+var last = "Lourie";
+alert("Hello " + first + " " + last + "!");</code></pre>
+					<a class="button run-code">Run</a>
 				</section>
 
 				<section>
-					<h1>Types</h1>
-					<h3>number</h3>
+					<h1>string</h1>
+<pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+<pre><code class="medium">alert("Length of your name: " + input.length);</code></pre>
+					<p>
+						<label>Sample Input:</label>
+						<input type="text" value="Raine" />
+					</p>
+					<a class="button run-code">Run</a>
+				</section>
+
+				<section>
+					<h1>number</h1>
 <pre><code class="javascript">var x = 10;
 var squared = x * x;</code></pre>
 
-<pre><code class="javascript">var fahrenheit = 100;
-var celsius = (fahrenheit - 32) * 5/9;
-alert(celsius);</code></pre>
-<a class="button run-code">Run</a>
+					<h4>Number Operators</h4>
+					<table>
+						<tr>
+							<td>Add</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Subtract</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Multiply</td>
+							<td>*</td>
+						</tr>
+						<tr>
+							<td>Divide</td>
+							<td>/</td>
+						</tr>
+					</table>
+
 				</section>
 
 				<section>
-					<h1>Types</h1>
-					<h3>boolean</h3>
+					<h1>number</h1>
+<pre class="init"><code>var fahrenheit = $("section.present :text").val();</code></pre>
+<pre><code class="javascript">var celsius = (fahrenheit - 32) * 5/9;
+alert(celsius);</code></pre>
+					<p>
+						<label>Fahrenheit:</label>
+						<input type="text" value="100" />
+					</p>
+					<a class="button run-code">Run</a>
+				</section>
+
+				<section>
+					<h1>boolean</h1>
 <pre><code class="javascript">var formIsValid = false;</code></pre>
 <pre><code class="javascript">var isSunny = true;
 var isCloudy = !isSunny;
 alert(isCloudy);</code></pre>
-<a class="button run-code">Run</a>
+					<a class="button run-code">Run</a>
+				</section>
+
+				<section>
+					<h1>boolean</h1>
+					<h4>Boolean Operators</h4>
+					<table>
+						<tr>
+							<td>Equal To</td>
+							<td>===</td>
+						</tr>
+						<tr>
+							<td>Not Equal To</td>
+							<td>!==</td>
+						</tr>
+						<tr>
+							<td>Greater Than</td>
+							<td>&gt;</td>
+						</tr>
+						<tr>
+							<td>Greater Than or Equal To</td>
+							<td>&gt;=</td>
+						</tr>
+						<tr>
+							<td>Less Than</td>
+							<td>&lt;</td>
+						</tr>
+						<tr>
+							<td>Less Than or Equal To</td>
+							<td>&lt;=</td>
+						</tr>
+						<tr>
+							<td>And</td>
+							<td>&amp;&amp;</td>
+						</tr>
+						<tr>
+							<td>Or</td>
+							<td>||</td>
+						</tr>
+						<tr>
+							<td>Not</td>
+							<td>!</td>
+						</tr>
+					</table>
+
+				</section>
+
+				<section>
+					<h1>boolean</h1>
+<pre><code class="medium">if(input.length === 0) {
+	alert("Please enter a value.");
+}</code></pre>
+
+<pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+<pre><code class="medium">var isEmpty = input.length === 0;
+if(isEmpty) {
+	alert("Please enter a value.");
+}</code></pre>
+				</section>
+
+				<section>
+					<h1>boolean</h1>
+					<h4>And</h4>
+
+					<table>
+						<tr>
+							<td><code>true && true</code></td>
+							<td><code class="true">true</code></td>
+						</tr>
+						<tr>
+							<td><code>true && false</code></td>
+							<td><code class="false">false</code></td>
+						</tr>
+						<tr>
+							<td><code>false && true</code></td>
+							<td><code class="false">false</code></td>
+						</tr>
+						<tr>
+							<td><code>false && false</code></td>
+							<td><code class="false">false</code></td>
+						</tr>
+					</table>
+
+<pre><code class="medium" language="javascript">var formIsValid = true;
+var submitButtonClicked = false;
+alert(formIsValid && submitButtonClicked);</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>boolean</h1>
+					<h4>Or</h4>
+
+					<table>
+						<tr>
+							<td><code>true || true</code></td>
+							<td><code class="true">true</code></td>
+						</tr>
+						<tr>
+							<td><code>true || false</code></td>
+							<td><code class="true">true</code></td>
+						</tr>
+						<tr>
+							<td><code>false || true</code></td>
+							<td><code class="true">true</code></td>
+						</tr>
+						<tr>
+							<td><code>false || false</code></td>
+							<td><code class="false">false</code></td>
+						</tr>
+					</table>
+
+<pre><code class="medium" language="javascript">var submitButtonClicked = false;
+var enterKeyPresed = true;
+alert(submitButtonClicked || enterKeyPresed);</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Review</h1>
+					<ul>
+						<li>Run Javascript with the the <code>&lt;script&gt;</code> tag.</li>
+						<li class="fragment">Variables store values.</li>
+						<li class="fragment"><code>if</code> statements branch your code.</li>
+						<li class="fragment">What you can do with a value depends on its type.</li>
+						<li class="fragment">Operators compare values or calculate new values.</li>
+						<p class="end-fragment fragment">~</p>
+					</ul>
 				</section>
 
 				<section>
 					<h1>Arrays</h1>
+					<p>Ordered list of values</p>
+
+<pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
+		  "Thursday", "Friday", "Saturday", "Sunday"];</code></pre>
+
+				</section>
+
+				<section>
+					<h1>Arrays</h1>
+					<h3>Accessing</h3>
+
+<pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
+		  "Thursday", "Friday", "Saturday", "Sunday"];
+var thirdDayOfWeek = days[2];
+alert(thirdDayOfWeek);
+</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Arrays</h1>
+					<h3>Length</h3>
+
+<pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
+		  "Thursday", "Friday", "Saturday", "Sunday"];
+alert(days.length);</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Arrays</h1>
+					<h3>Looping</h3>
+
+<pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
+		  "Thursday", "Friday", "Saturday", "Sunday"];
+
+for(var i=0; i&lt;days.length; i++) {
+	alert("It's " + days[i] + "!");
+}
+</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Arrays</h1>
+					<h3>Looping</h3>
+
+					<img src="images/code3-for-loop.png" />
+
 				</section>
 
 				<section>
 					<h1>Objects</h1>
+					<p>Define a value with custom properties</p><br />
+
+<pre><code>var movieReview = {
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
+};
+</code></pre>
+				</section>
+
+				<section>
+					<h1>Objects</h1>
+					<p>Define your own type of value</p>
+
+					<img src="images/code4-object-property.png" />
+
+				</section>
+
+				<section>
+					<h1>Objects</h1>
+					<h3>Accessing Property Values</h3>
+
+<pre><code>var movieReview = {
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
+};
+var movieTitle = movieReview["title"];
+alert(movieTitle);
+</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Objects</h1>
+					<h3>Accessing Property Values</h3>
+
+<pre><code>var movieReview = {
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
+};
+var propertyName = "title";
+var movieTitle = movieReview[propertyName];
+alert(movieTitle);
+</code></pre>
+
+					<a class="button run-code">Run</a>
+
+				</section>
+
+				<section>
+					<h1>Objects</h1>
+					<h3>Accessing Property Values</h3>
+
+<pre><code class="medium">var movieReview = {
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
+};
+var ratingPercent = movieReview["rating"] / 5 * 100;
+alert(ratingPercent + "%");
+</code></pre>
+
+					<a class="button run-code">Run</a>
+
 				</section>
 
 				<section>

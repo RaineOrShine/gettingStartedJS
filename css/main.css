@@ -28,3 +28,34 @@ a {
   background: none;
   box-shadow: none;
 }
+#reveal table {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+#reveal table th {
+  font-weight: bold;
+}
+#reveal table td,
+#reveal table th {
+  padding: 5px 10px;
+  text-align: left;
+}
+#reveal table tr > *:not(:last-child) {
+  border-right: solid 2px rgba(255,255,255,0.30);
+}
+#reveal table tr:not(:last-child) > * {
+  border-bottom: solid 2px rgba(255,255,255,0.30);
+}
+#reveal .dim {
+  color: #808080;
+}
+#reveal .end-fragment {
+  text-align: center;
+  color: #808080;
+}
+#reveal .true {
+  color: #acf;
+}
+#reveal .false {
+  color: #fca;
+}
