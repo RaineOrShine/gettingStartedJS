@@ -1,5 +1,28 @@
-a {
+/***********************************
+  CONSTANTS
+ ***********************************/
+/***********************************
+ * CLEARFIX
+ ***********************************/
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/***********************************
+ * S P A C E D O U T
+ ***********************************/
+/***********************************
+ * MAIN
+ ***********************************/
+#reveal a {
   cursor: pointer;
+}
+#reveal p {
+  margin-bottom: 40px;
 }
 #reveal input {
   font-size: 26px;
@@ -58,4 +81,8 @@ a {
 }
 #reveal .false {
   color: #fca;
+}
+#reveal .two-columns> * {
+  float: left;
+  width: 50%;
 }

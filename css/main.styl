@@ -1,15 +1,67 @@
+/***********************************
+  CONSTANTS
+ ***********************************/
 blue    = #ACF
 red     = #FCA
+defaultspace = 20px
 
-a
-  cursor pointer
+
+/***********************************
+ * CLEARFIX
+ ***********************************/
+@css {
+  .clearfix:before,
+  .clearfix:after {
+      content:"";
+      display:table;
+  }
+  .clearfix:after {
+      clear:both;
+  }
+}
+
+
+/***********************************
+ * S P A C E D O U T
+ ***********************************/
+space-out(space, margin-side)
+  & > *
+    margin-{margin-side} space
+    &:last-child
+      margin-{margin-side} 0
+
+space-h(space = defaultspace)
+  space-out(space, right)
+
+space-v(space = defaultspace)
+  space-out(space, bottom)
+
+space-list(space = defaultspace)
+  space-h(space)
+  list-style none
+  margin 0
+  padding 0
+  &> li
+    display inline-block
+
+/***********************************
+ * MAIN
+ ***********************************/
+
 
 #reveal 
+  a
+    cursor pointer
+
+  p
+    margin-bottom 40px
+
   input
     font-size 26px
     background-color rgba(255,255,255,0.8)
     border-radius 5px
     padding 2px 10px
+
   code
     font-size 30px
     line-height 38px
@@ -20,12 +72,15 @@ a
     &.small
       font-size 18px
       line-height 24px
+
   .init
     display none
+
   section img
     border none
     background none
     box-shadow none
+
   table
     display inline-block
     margin-bottom 40px
@@ -38,13 +93,21 @@ a
       border-right solid 2px rgba(255,255,255,0.3)
     tr:not(:last-child) > *
       border-bottom solid 2px rgba(255,255,255,0.3)
+
   .dim
     color gray
+
   .end-fragment
     text-align center
     color gray
+
   .true
     color blue
   .false
     color red
+
+  .two-columns
+    &> *
+      float left
+      width 50%
 
