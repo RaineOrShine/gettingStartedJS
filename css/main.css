@@ -43,6 +43,12 @@
   font-size: 18px;
   line-height: 24px;
 }
+#reveal h1 code,
+#reveal h2 code,
+#reveal h3 code,
+#reveal h4 code {
+  text-transform: none;
+}
 #reveal .init {
   display: none;
 }
@@ -68,6 +74,13 @@
 }
 #reveal table tr:not(:last-child) > * {
   border-bottom: solid 2px rgba(255,255,255,0.30);
+}
+#reveal address {
+  width: 60%;
+  margin: 40px auto;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.05);
+  box-shadow: 0 0 2px rgba(0,0,0,0.20);
 }
 #reveal .dim {
   color: #808080;

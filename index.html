@@ -27,10 +27,12 @@
 
 <div class="slides">
 
+
 <section>
 	<h1>Getting Started with Javascript</h1>
 	<h2>Raine Lourie</h2>
 </section>
+
 
 <section>
 	<h1>Interaction</h1>
@@ -44,11 +46,13 @@
 	</ul>
 </section>
 
+
 <section>
 	<h2>What does Javascript look like?</h1>
 <pre><code language="javascript">var name = "Raine";
 alert("Hello, my name is " + name + "!");</code></pre>
 </section>
+
 
 <section>
 	<h2>How do I run </br>Javascript on my page?</h1>
@@ -60,6 +64,7 @@ alert("Hello, my name is " + name + "!");</code></pre>
 </html></textarea>
 </section>
 
+
 <section>
 	<h1>Variables</h1>
 <pre><code language="javascript">var first = "Raine";
@@ -68,22 +73,27 @@ alert("Hello " + first + " " + last + "!");</code></pre>
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>Variables</h1>
 	<img src="images/code1-variable-statement.png" />
 </section>
+
 
 <section>
 	<h1>Variables</h1>
 	<img src="images/code2-variable-statement2.png" />
 </section>
 
+
 <section>
 	<h1>Conditionals</h1>
 	<h3>Two roads diverged in a yellow wood...</h3>
+
 <pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
 <pre><code class="medium">if(input === "less traveled") {
-alert("That has made all the difference.");
+	alert("That has made all the difference.");
 }</code></pre>
 	<p>
 		<label>Sample Input:</label>
@@ -92,16 +102,20 @@ alert("That has made all the difference.");
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>Conditionals</h1>
 	<h3>ELSE</h3>
+
 <pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
 <pre><code class="medium">if(input === "less traveled") {
-alert("That has made all the difference.");
+	alert("That has made all the difference.");
 }
 else {
-alert("That was kind of boring.");
+	alert("That was kind of boring.");
 }</code></pre>
+
 	<p>
 		<label>Sample Input:</label>
 		<input type="text" value="more traveled" />
@@ -109,16 +123,20 @@ alert("That was kind of boring.");
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>Conditionals</h1>
 	<h3>Greater Than</h3>
+
 <pre class="init"><code>var input = parseInt($("section.present :text").val(), 10);</code></pre>
+
 <pre><code class="medium">if(input > 1000000) {
-alert("Big Number!");
+	alert("Big Number!");
 }
 else {
-alert("Reasonably-Sized Number");
+	alert("Reasonably-Sized Number");
 }</code></pre>
+
 	<p>
 		<label>Sample Input:</label>
 		<input type="text" value="100" />
@@ -126,19 +144,24 @@ alert("Reasonably-Sized Number");
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>Conditionals</h1>
 	<h3>Accessing a property</h3>
+
 <pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
 <pre><code class="medium">if(input.length === 0) {
-alert("Please enter a value.");
+	alert("Please enter a value.");
 }</code></pre>
+
 	<p>
 		<label>Sample Input:</label>
 		<input type="text" value="" />
 	</p>
 	<a class="button run-code">Run</a>
 </section>
+
 
 <section>
 	<h1>Types</h1>
@@ -152,18 +175,25 @@ alert("Please enter a value.");
 	</ul>
 </section>
 
-<section>
-	<h1>string</h1>
-<pre><code language="javascript">var first = "Raine";
-var last = "Lourie";
-alert("Hello " + first + " " + last + "!");</code></pre>
-	<a class="button run-code">Run</a>
-</section>
 
 <section>
 	<h1>string</h1>
+
+<pre><code language="javascript">var first = "Raine";
+var last = "Lourie";
+alert("Hello " + first + " " + last + "!");</code></pre>
+
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>string</h1>
+
 <pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
 <pre><code class="medium">alert("Length of your name: " + input.length);</code></pre>
+
 	<p>
 		<label>Sample Input:</label>
 		<input type="text" value="Raine" />
@@ -171,8 +201,10 @@ alert("Hello " + first + " " + last + "!");</code></pre>
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>number</h1>
+
 <pre><code class="javascript">var x = 10;
 var squared = x * x;</code></pre>
 
@@ -198,11 +230,15 @@ var squared = x * x;</code></pre>
 
 </section>
 
+
 <section>
 	<h1>number</h1>
+
 <pre class="init"><code>var fahrenheit = $("section.present :text").val();</code></pre>
+
 <pre><code class="javascript">var celsius = (fahrenheit - 32) * 5/9;
 alert(celsius);</code></pre>
+
 	<p>
 		<label>Fahrenheit:</label>
 		<input type="text" value="100" />
@@ -210,14 +246,19 @@ alert(celsius);</code></pre>
 	<a class="button run-code">Run</a>
 </section>
 
+
 <section>
 	<h1>boolean</h1>
+
 <pre><code class="javascript">var formIsValid = false;</code></pre>
+
 <pre><code class="javascript">var isSunny = true;
 var isCloudy = !isSunny;
 alert(isCloudy);</code></pre>
+
 	<a class="button run-code">Run</a>
 </section>
+
 
 <section>
 	<h1>boolean</h1>
@@ -263,18 +304,23 @@ alert(isCloudy);</code></pre>
 
 </section>
 
+
 <section>
 	<h1>boolean</h1>
+
 <pre><code class="medium">if(input.length === 0) {
-alert("Please enter a value.");
+	alert("Please enter a value.");
 }</code></pre>
 
 <pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
 <pre><code class="medium">var isEmpty = input.length === 0;
 if(isEmpty) {
-alert("Please enter a value.");
+	alert("Please enter a value.");
 }</code></pre>
+
 </section>
+
 
 <section>
 	<h1>boolean</h1>
@@ -307,6 +353,7 @@ alert(formIsValid && submitButtonClicked);</code></pre>
 
 </section>
 
+
 <section>
 	<h1>boolean</h1>
 	<h4>Or</h4>
@@ -338,6 +385,7 @@ alert(submitButtonClicked || enterKeyPresed);</code></pre>
 
 </section>
 
+
 <section>
 	<h1>Review</h1>
 	<ul>
@@ -350,6 +398,7 @@ alert(submitButtonClicked || enterKeyPresed);</code></pre>
 	</ul>
 </section>
 
+
 <section>
 	<h1>Arrays</h1>
 	<p>Ordered list of values</p>
@@ -358,6 +407,7 @@ alert(submitButtonClicked || enterKeyPresed);</code></pre>
 "Thursday", "Friday", "Saturday", "Sunday"];</code></pre>
 
 </section>
+
 
 <section>
 	<h1>Arrays</h1>
@@ -373,6 +423,7 @@ alert(thirdDayOfWeek);
 
 </section>
 
+
 <section>
 	<h1>Arrays</h1>
 	<h3>Length</h3>
@@ -385,6 +436,7 @@ alert(days.length);</code></pre>
 
 </section>
 
+
 <section>
 	<h1>Arrays</h1>
 	<h3>Looping</h3>
@@ -393,13 +445,14 @@ alert(days.length);</code></pre>
 "Thursday", "Friday", "Saturday", "Sunday"];
 
 for(var i=0; i&lt;days.length; i++) {
-alert("It's " + days[i] + "!");
+	alert("It's " + days[i] + "!");
 }
 </code></pre>
 
 	<a class="button run-code">Run</a>
 
 </section>
+
 
 <section>
 	<h1>Arrays</h1>
@@ -409,17 +462,19 @@ alert("It's " + days[i] + "!");
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<p>Define a value with custom properties</p><br />
 
 <pre><code>var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 </code></pre>
 </section>
+
 
 <section>
 	<h1>Objects</h1>
@@ -429,14 +484,15 @@ rating:   4.5
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<h3>Accessing Property Values</h3>
 
 <pre><code>var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 var movieTitle = movieReview["title"];
 alert(movieTitle);
@@ -446,14 +502,15 @@ alert(movieTitle);
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<h3>Accessing Property Values</h3>
 
 <pre><code>var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 var propertyName = "title";
 var movieTitle = movieReview[propertyName];
@@ -464,14 +521,15 @@ alert(movieTitle);
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<h3>Accessing Property Values</h3>
 
 <pre><code class="medium">var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 var ratingPercent = movieReview["rating"] / 5 * 100;
 alert(ratingPercent + "%");
@@ -481,14 +539,15 @@ alert(ratingPercent + "%");
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<h3>Setting Property Values</h3>
 
 <pre><code class="medium">var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 movieReview["year"] = 2001;
 alert(movieReview["year"]);
@@ -498,14 +557,15 @@ alert(movieReview["year"]);
 
 </section>
 
+
 <section>
 	<h1>Objects</h1>
 	<h3>Dot Notation</h3>
 
 <pre><code class="medium">var movieReview = {
-title:    "Spirited Away",
-director: "Hayao Miyazaki",
-rating:   4.5
+	title:    "Spirited Away",
+	director: "Hayao Miyazaki",
+	rating:   4.5
 };
 movieReview.year = 2001;
 alert(movieReview.year);
@@ -515,22 +575,24 @@ alert(movieReview.year);
 
 </section>
 
+
 <section>
-	<h1>Functions</h1>
+	<h1>Function</h1>
 	<p>A reusable block of code with inputs and outputs.</p>
 	<div class="clearfix two-columns">
 		<div>
-			<p>1. Defining a function</p>
+			<p>1. Defining the function</p>
 
 <pre><code class="medium" language="javascript">var area = function(w, h) {
-return w * h;
+	return w * h;
 };</pre></code>
 
 		</div>
 		<div>
-			<p>2. Calling a function</p>
+			<p>2. Calling the function</p>
 
 <pre><code class="medium" language="javascript">var result = area(3, 4);
+
 alert(result);</pre></code>
 
 		</div>
@@ -540,62 +602,110 @@ alert(result);</pre></code>
 
 </section>
 
+
 <section>
-	<h1>Functions</h1>
+	<h1>Function</h1>
 	<h3>Parts of a function definition</h3>
 
 	<img src="images/code5-function-definition.png" />
 
 </section>
 
+
 <section>
-	<h1>Functions</h1>
+	<h1>Function</h1>
 	<h3>Parts of a function call</h3>
 
-	<img src="images/code5-function-call.png" />
+	<img src="images/code6-function-call.png" />
 
 </section>
 
-<section>
-	<h1>Functions</h1>
-	<h3>Terminology</h3>
-
-	<table>
-		<tr>
-			<th>Inputs</th>
-			<td>Parameters, Arguments</td>
-		</tr>
-		<tr>
-			<th>Output</th>
-			<td>Return Value</td>
-		</tr>
-		<tr>
-			<th>Define</th>
-			<td>Declare</td>
-		</tr>
-		<tr>
-			<th>Call</th>
-			<td>Invoke, Execute</td>
-		</tr>
-	</table>
-
-</section>
 
 <section>
-	<h1>Functions</h1>
+	<h1>Function</h1>
+	<h3>Example</h3>
 	<div class="clearfix two-columns">
 		<div>
-			<p>1. Defining a function</p>
 
-<pre class="init"><code>var input = $("section.present :text").val();</code></pre>
-
-<pre><code class="medium" language="javascript">var isEmpty = function(s) {
-return s.length === 0;
+<pre><code class="medium" language="javascript">var square = function(x) {
+	return x * x;
 };</pre></code>
 
 		</div>
 		<div>
-			<p>2. Calling a function</p>
+
+<pre><code class="medium" language="javascript">var result = square(3);
+
+alert(result);</pre></code>
+
+		</div>
+	</div>
+
+	<a class="button run-code">Run</a>
+
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<h3>Example</h3>
+	<div class="clearfix two-columns">
+		<div>
+
+<pre><code class="medium" language="javascript">var square = function(x) {
+	return x * x;
+};
+
+var cube = function(x) {
+	return x * square(x);
+};</pre></code>
+
+		</div>
+		<div>
+
+<pre><code class="medium" language="javascript">var result = cube(3);
+
+alert(result);</pre></code>
+
+		</div>
+	</div>
+
+	<a class="button run-code">Run</a>
+
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<p>Different variable assignments:</p>
+
+<pre><code language="javascript">var name = "Raine";</pre></code>
+
+<pre><code language="javascript">var isTooLarge = input > 1000000;</pre></code>
+
+<pre><code language="javascript">var area = function(w, h) {
+	return w * h;
+};</pre></code>
+
+</section>
+
+
+
+<section>
+	<h1>Function</h1>
+	<div class="clearfix two-columns">
+		<div>
+			<p>1. Defining the function</p>
+
+<pre class="init"><code>var input = $("section.present :text").val();</code></pre>
+
+<pre><code class="medium" language="javascript">var isEmpty = function(s) {
+	return s.length === 0;
+};</pre></code>
+
+		</div>
+		<div>
+			<p>2. Calling the function</p>
 
 <pre><code class="small" language="javascript">var inputIsEmpty = isEmpty(input);
 alert(inputIsEmpty);</pre></code>
@@ -612,8 +722,142 @@ alert(inputIsEmpty);</pre></code>
 
 </section>
 
+
 <section>
-	<h1>Examples</h1>
+	<h1>Function</h1>
+	<h3>Terminology</h3>
+
+	<table>
+		<tr>
+			<th>Define</th>
+			<td>Declare</td>
+		</tr>
+		<tr>
+			<th>Call</th>
+			<td>Invoke, Execute</td>
+		</tr>
+		<tr>
+			<th>Inputs</th>
+			<td>Parameters, Arguments</td>
+		</tr>
+		<tr>
+			<th>Output</th>
+			<td>Return Value</td>
+		</tr>
+	</table>
+
+</section>
+
+
+<section>
+	<h1>Function</h1>
+
+<pre><code>var pluralize = function(word, number) {
+	if(number === 1) {
+		return word;
+	}
+	else {
+		return word + "s";
+	}
+};</pre></code>
+
+
+<pre><code>var result = pluralize("rabbit", 10);
+alert(result);</pre></code>
+
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<h3>Built-In Functions</h3>
+	<code>toUpperCase()</code>
+
+<pre><code>var name = "Siddhartha Gautama";
+var nameUpper = name.toUpperCase();
+alert(nameUpper);</pre></code>
+
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<h3>Built-In Functions</h3>
+	<code>split()</code>
+
+<pre><code>var decimel = "2.5";
+var pieces = decimel.split(".");
+alert(pieces[0]);</pre></code>
+
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<h3>Built-In Functions</h3>
+	<code>join()</code>
+
+<pre><code>var fruit = ["Papaya", "Kiwi", "Mango"];
+var fruitJoined = fruit.join(" or ");
+alert(fruitJoined);</pre></code>
+
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>Function</h1>
+	<h3>Scope</h3>
+
+<pre><code class="medium" language="javascript">var isValidNumber = function(x) {
+	var max = 100;
+	return x <= 100;
+};
+
+var max = 75;
+var isValid = isValidNumber(80);
+
+alert(max);
+alert(isValid);</pre></code>
+
+	<a class="button run-code">Run</a>
+
+</section>
+
+
+
+<section>
+	<h1>Example</h1>
+
+</section>
+
+
+<section>
+	<h1>Next steps...</h1>
+
+	<h3>jQuery</h3>
+	<ul>
+		<li>Add text to the page.</li>
+		<li>Add or remove elements.</li>
+		<li>Respond to mouse clicks.</li>
+		<li>Animate elements.</li>
+		<li>Load data in the background (AJAX).</li>
+	</ul>
+
+</section>
+
+
+<section>
+	<h1>THANK YOU</h1>
+
+	<address>
+		<h2>Raine Lourie</h2>
+		<a href="http://boulderwebguru.com">boulderwebguru.com</a>
+	</address>
+
 </section>
 
 </div>
