@@ -47,11 +47,11 @@
 </section>
 
 
-<section>
+<!--<section>
 	<h2>What does Javascript look like?</h1>
 <pre><code language="javascript">var name = "Raine";
 alert("Hello, my name is " + name + "!");</code></pre>
-</section>
+</section>-->
 
 
 <section>
@@ -67,10 +67,13 @@ alert("Hello, my name is " + name + "!");</code></pre>
 
 <section>
 	<h1>Variables</h1>
+
 <pre><code language="javascript">var first = "Raine";
 var last = "Lourie";
 alert("Hello " + first + " " + last + "!");</code></pre>
+
 	<a class="button run-code">Run</a>
+
 </section>
 
 
@@ -80,10 +83,10 @@ alert("Hello " + first + " " + last + "!");</code></pre>
 </section>
 
 
-<section>
+<!--<section>
 	<h1>Variables</h1>
 	<img src="images/code2-variable-statement2.png" />
-</section>
+</section>-->
 
 
 <section>
@@ -130,7 +133,7 @@ else {
 
 <pre class="init"><code>var input = parseInt($("section.present :text").val(), 10);</code></pre>
 
-<pre><code class="medium">if(input > 1000000) {
+<pre><code class="medium">if(input &gt; 1000000) {
 	alert("Big Number!");
 }
 else {
@@ -394,8 +397,8 @@ alert(submitButtonClicked || enterKeyPresed);</code></pre>
 		<li class="fragment"><code>if</code> statements branch your code.</li>
 		<li class="fragment">What you can do with a value depends on its type.</li>
 		<li class="fragment">Operators compare values or calculate new values.</li>
-		<p class="end-fragment fragment">~</p>
 	</ul>
+	<p class="end-fragment fragment">~</p>
 </section>
 
 
@@ -404,17 +407,8 @@ alert(submitButtonClicked || enterKeyPresed);</code></pre>
 	<p>Ordered list of values</p>
 
 <pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
-"Thursday", "Friday", "Saturday", "Sunday"];</code></pre>
-
-</section>
-
-
-<section>
-	<h1>Arrays</h1>
-	<h3>Accessing</h3>
-
-<pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
 "Thursday", "Friday", "Saturday", "Sunday"];
+
 var thirdDayOfWeek = days[2];
 alert(thirdDayOfWeek);
 </code></pre>
@@ -430,6 +424,7 @@ alert(thirdDayOfWeek);
 
 <pre><code class="medium">var days = ["Monday", "Tuesday", "Wednesday", 
 "Thursday", "Friday", "Saturday", "Sunday"];
+
 alert(days.length);</code></pre>
 
 	<a class="button run-code">Run</a>
@@ -465,7 +460,7 @@ for(var i=0; i&lt;days.length; i++) {
 
 <section>
 	<h1>Objects</h1>
-	<p>Define a value with custom properties</p><br />
+	<p>A value with custom properties</p>
 
 <pre><code>var movieReview = {
 	title:    "Spirited Away",
@@ -478,7 +473,6 @@ for(var i=0; i&lt;days.length; i++) {
 
 <section>
 	<h1>Objects</h1>
-	<p>Define your own type of value</p>
 
 	<img src="images/code4-object-property.png" />
 
@@ -577,8 +571,33 @@ alert(movieReview.year);
 
 
 <section>
+	<h1>Review</h1>
+	<h3>Arrays</h3>
+	<ul>
+		<li>An array is an ordered list of values</li>
+		<li class="fragment">Access an individual item with <code>myArray[INDEX]</code></li>
+		<li class="fragment">Get the number of items with <code>myArray.length</code></li>
+		<li class="fragment">Use a <code>for</code> loop to run code for each item</li>
+	</ul>
+	<p class="end-fragment fragment">~</p>
+</section>
+
+
+<section>
+	<h1>Review</h1>
+	<h3>Objects</h3>
+	<ul>
+		<li>An object is a value with custom properties</li>
+		<li class="fragment">Access the value of a property with <code>myObject[NAME]</code></li>
+		<li class="fragment">You can also use dot notation: <code>myObject.NAME</code></li>
+	</ul>
+	<p class="end-fragment fragment">~</p>
+</section>
+
+
+<section>
 	<h1>Function</h1>
-	<p>A reusable block of code with inputs and outputs.</p>
+	<p>A reusable block of code with inputs and outputs</p>
 	<div class="clearfix two-columns">
 		<div>
 			<p>1. Defining the function</p>
@@ -677,7 +696,7 @@ alert(result);</pre></code>
 
 <section>
 	<h1>Function</h1>
-	<p>Different variable assignments:</p>
+	<p>Just another variable assignments</p>
 
 <pre><code language="javascript">var name = "Raine";</pre></code>
 
@@ -725,7 +744,7 @@ alert(inputIsEmpty);</pre></code>
 
 <section>
 	<h1>Function</h1>
-	<h3>Terminology</h3>
+	<h3>You say potato, I say parameter</h3>
 
 	<table>
 		<tr>
@@ -814,7 +833,7 @@ alert(fruitJoined);</pre></code>
 
 <pre><code class="medium" language="javascript">var isValidNumber = function(x) {
 	var max = 100;
-	return x <= 100;
+	return x &lt;= 100;
 };
 
 var max = 75;
@@ -828,11 +847,33 @@ alert(isValid);</pre></code>
 </section>
 
 
-
 <section>
-	<h1>Example</h1>
+	<h1>Review</h1>
+	<h3>Function</h3>
+	<ul>
+		<li>A reusable block of code</li>
+		<li class="fragment">Stored in a variable (defined) and run later (called)</li>
+		<li class="fragment">Parameters are inputs required by the function</li>
+		<li class="fragment">The return value is the output of the function</li>
+		<li class="fragment">Most values have built-in functions (accessed with dot notation)</li>
+		<li class="fragment">Parameter names and internal variables can only be used in the body of the function</li>
+	</ul>
+	<p class="end-fragment fragment">~</p>
 
 </section>
+
+
+<!--<section>
+	<h1>Mega Review</h1>
+	<ul>
+		<li>Variables</li>
+		<li>Conditionals</li>
+		<li>Primitive Types</li>
+		<li>Arrays</li>
+		<li>Objects</li>
+		<li>Functions</li>
+	</ul>
+</section>-->
 
 
 <section>
@@ -853,9 +894,11 @@ alert(isValid);</pre></code>
 <section>
 	<h1>Resources</h1>
 
-	<ul>
+	<ul class="space-v">
 		<li>Code Academy<br />
 		<a href="http://www.codecademy.com">http://www.codecademy.com</a></li>
+		<li>Learn Javascript (Mozilla)<br />
+		<a href="https://developer.mozilla.org/en-US/learn/javascript">https://developer.mozilla.org/en-US/learn/javascript</a></li>
 		<li>jQuery<br />
 		<a href="http://jquery.com">http://jquery.com</a></li>
 		<li>jQuery UI<br />
