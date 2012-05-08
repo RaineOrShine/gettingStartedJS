@@ -1,0 +1,126 @@
+/***********************************
+  CONSTANTS
+ ***********************************/
+blue    = #ACF
+red     = #FCA
+defaultspace = 20px
+
+
+/***********************************
+ * CLEARFIX
+ ***********************************/
+@css {
+  .clearfix:before,
+  .clearfix:after {
+      content:"";
+      display:table;
+  }
+  .clearfix:after {
+      clear:both;
+  }
+}
+
+
+/***********************************
+ * S P A C E D O U T
+ ***********************************/
+space-out(space, margin-side)
+  & > *
+    margin-{margin-side} space
+    &:last-child
+      margin-{margin-side} 0
+
+space-h(space = defaultspace)
+  space-out(space, right)
+
+space-v(space = defaultspace)
+  space-out(space, bottom)
+
+space-list(space = defaultspace)
+  space-h(space)
+  list-style none
+  margin 0
+  padding 0
+  &> li
+    display inline-block
+
+.space-v
+  space-v()
+
+/***********************************
+ * MAIN
+ ***********************************/
+
+
+#reveal 
+  a
+    cursor pointer
+
+  p
+    margin-bottom 40px
+
+  input
+    font-size 26px
+    background-color rgba(255,255,255,0.8)
+    border-radius 5px
+    padding 2px 10px
+
+  code
+    font-size 30px
+    line-height 38px
+    margin-bottom 40px
+    &.medium
+      font-size 24px
+      line-height 32px
+    &.small
+      font-size 18px
+      line-height 24px
+
+  h1,h2,h3,h4
+    code
+      text-transform none   
+
+  .init
+    display none
+
+  section img
+    border none
+    background none
+    box-shadow none
+
+  table
+    display inline-block
+    margin-bottom 40px
+    th
+      font-weight bold
+    td,th
+      padding 5px 10px
+      text-align left
+    tr > *:not(:last-child)
+      border-right solid 2px rgba(255,255,255,0.3)
+    tr:not(:last-child) > *
+      border-bottom solid 2px rgba(255,255,255,0.3)
+
+  address
+    width 60%
+    margin 40px auto
+    padding 40px 0
+    background-color rgba(255, 255, 255, 0.05)
+    box-shadow 0 0 2px rgba(0, 0, 0, 0.2)
+
+  .dim
+    color gray
+
+  .end-fragment
+    text-align center
+    color gray
+
+  .true
+    color blue
+  .false
+    color red
+
+  .two-columns
+    &> *
+      float left
+      width 50%

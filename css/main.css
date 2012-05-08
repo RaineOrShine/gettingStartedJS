@@ -1,0 +1,107 @@
+/***********************************
+  CONSTANTS
+ ***********************************/
+/***********************************
+ * CLEARFIX
+ ***********************************/
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/***********************************
+ * S P A C E D O U T
+ ***********************************/
+.space-v > * {
+  margin-bottom: 20px;
+}
+.space-v > *:last-child {
+  margin-bottom: 0;
+}
+/***********************************
+ * MAIN
+ ***********************************/
+#reveal a {
+  cursor: pointer;
+}
+#reveal p {
+  margin-bottom: 40px;
+}
+#reveal input {
+  font-size: 26px;
+  background-color: rgba(255,255,255,0.80);
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+#reveal code {
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+#reveal code.medium {
+  font-size: 24px;
+  line-height: 32px;
+}
+#reveal code.small {
+  font-size: 18px;
+  line-height: 24px;
+}
+#reveal h1 code,
+#reveal h2 code,
+#reveal h3 code,
+#reveal h4 code {
+  text-transform: none;
+}
+#reveal .init {
+  display: none;
+}
+#reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+#reveal table {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+#reveal table th {
+  font-weight: bold;
+}
+#reveal table td,
+#reveal table th {
+  padding: 5px 10px;
+  text-align: left;
+}
+#reveal table tr > *:not(:last-child) {
+  border-right: solid 2px rgba(255,255,255,0.30);
+}
+#reveal table tr:not(:last-child) > * {
+  border-bottom: solid 2px rgba(255,255,255,0.30);
+}
+#reveal address {
+  width: 60%;
+  margin: 40px auto;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.05);
+  box-shadow: 0 0 2px rgba(0,0,0,0.20);
+}
+#reveal .dim {
+  color: #808080;
+}
+#reveal .end-fragment {
+  text-align: center;
+  color: #808080;
+}
+#reveal .true {
+  color: #acf;
+}
+#reveal .false {
+  color: #fca;
+}
+#reveal .two-columns> * {
+  float: left;
+  width: 50%;
+}
