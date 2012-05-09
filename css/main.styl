@@ -24,17 +24,29 @@ defaultspace = 20px
 /***********************************
  * S P A C E D O U T
  ***********************************/
-space-out(space, margin-side)
+space-out(space, side)
   & > *
-    margin-{margin-side} space
+    margin-{side} space
     &:last-child
-      margin-{margin-side} 0
+      margin-{side} 0
+
+pad-out(space, side)
+  & > *
+    padding-{side} space
+    &:last-child
+      padding-{side} 0
 
 space-h(space = defaultspace)
   space-out(space, right)
 
 space-v(space = defaultspace)
   space-out(space, bottom)
+
+pad-h(space = defaultspace)
+  pad-out(space, right)
+
+pad-v(space = defaultspace)
+  pad-out(space, bottom)
 
 space-list(space = defaultspace)
   space-h(space)
@@ -64,6 +76,17 @@ space-list(space = defaultspace)
     background-color rgba(255,255,255,0.8)
     border-radius 5px
     padding 2px 10px
+
+  fieldset
+    display inline-block
+    &> div
+      pad-h()
+      pad-v()
+      display table-row
+      label
+        text-align right
+      &> *
+        display table-cell
 
   code
     font-size 30px

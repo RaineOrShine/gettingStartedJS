@@ -36,6 +36,30 @@
   border-radius: 5px;
   padding: 2px 10px;
 }
+#reveal fieldset {
+  display: inline-block;
+}
+#reveal fieldset> div {
+  display: table-row;
+}
+#reveal fieldset> div > * {
+  padding-right: 20px;
+}
+#reveal fieldset> div > *:last-child {
+  padding-right: 0;
+}
+#reveal fieldset> div > * {
+  padding-bottom: 20px;
+}
+#reveal fieldset> div > *:last-child {
+  padding-bottom: 0;
+}
+#reveal fieldset> div label {
+  text-align: right;
+}
+#reveal fieldset> div> * {
+  display: table-cell;
+}
 #reveal code {
   font-size: 30px;
   line-height: 38px;
