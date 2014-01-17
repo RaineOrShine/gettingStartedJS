@@ -35,45 +35,25 @@
 
 
 <section>
-	<h1>Interaction</h1>
+	<h2>What can Javascript do?</h2>
 	<ul>
-		<li><a href="http://jqueryui.com/themeroller/">jQueryUI</a> (User Interface)</li>
-		<li><a href="http://fancybox.net">FancyBox</a> (Image Gallery)</li>
-		<li><a href="https://twitter.com/#!/search/Javascript">Twitter</a> (Infinite Scrolling)</li>
-		<li><a href="https://trello.com/board/tinysprint-system/4f7155c0ff4c673148508e82">Trello</a> (Drag & Drop)</li>
-		<li><a href="http://physicsketch.appspot.com/">PhysicsSketch</a> (Physics Engine)</li>
-		<li class="fragment">This slideshow!</li>
+		<li><a href="http://jqueryui.com/themeroller/">jQueryUI</a></li>
+		<li><a href="http://fancybox.net">FancyBox</a></li>
+		<li><a href="https://twitter.com/#!/search/Javascript">Twitter</a></li>
+		<li><a href="https://trello.com/board/trello-development/4d5ea62fd76aa1136000000c">Trello</a></li>
+		<li><a href="http://physicsketch.appspot.com/">PhysicsSketch</a></li>
 	</ul>
 </section>
 
 
-<!--<section>
-	<h2>What does Javascript look like?</h1>
-<pre><code language="javascript">var name = "Raine";
-alert("Hello, my name is " + name + "!");</code></pre>
-</section>-->
-
-
 <section>
-	<h2>How do I run </br>Javascript on my page?</h1>
+	<h2>How do I run <br />Javascript on my page?</h2>
 	<textarea class="code">...
 
 <script src="js/myScript.js"></script>
 
 </body>
 </html></textarea>
-</section>
-
-
-<section>
-	<h1>Variables</h1>
-
-<pre><code language="javascript">var first = "Raine";
-var last = "Lourie";
-alert("Hello " + first + " " + last + "!");</code></pre>
-
-	<a class="button run-code">Run</a>
-
 </section>
 
 
@@ -135,6 +115,30 @@ else {
 
 <pre><code class="medium">if(input &gt; 1000000) {
 	alert("Big Number!");
+}
+else {
+	alert("Reasonably-Sized Number");
+}</code></pre>
+
+	<p>
+		<label>Sample Input:</label>
+		<input type="text" value="100" />
+	</p>
+	<a class="button run-code">Run</a>
+</section>
+
+
+<section>
+	<h1>Conditionals</h1>
+	<h3>Else If</h3>
+
+<pre class="init"><code>var input = parseInt($("section.present :text").val(), 10);</code></pre>
+
+<pre><code class="small">if(input &gt; 1000000) {
+	alert("Big Number!");
+}
+else if(input === 42) {
+	alert("The answer to life, the universe, and everything!");
 }
 else {
 	alert("Reasonably-Sized Number");
@@ -696,7 +700,7 @@ alert(result);</pre></code>
 
 <section>
 	<h1>Function</h1>
-	<p>Just another variable assignments</p>
+	<p>Just another variable assignment</p>
 
 <pre><code language="javascript">var name = "Raine";</pre></code>
 
@@ -771,7 +775,7 @@ alert(inputIsEmpty);</pre></code>
 <section>
 	<h1>Function</h1>
 
-<pre><code>var pluralize = function(word, number) {
+<pre><code class="medium">var pluralize = function(word, number) {
 	if(number === 1) {
 		return word;
 	}
@@ -780,38 +784,41 @@ alert(inputIsEmpty);</pre></code>
 	}
 };</pre></code>
 
-
-<pre><code>var result = pluralize("rabbit", 10);
+<pre class="init"><code>var wordInput = $("section.present :text[name='word']").val();
+var numberInput = parseInt($("section.present :text[name='number']").val(), 10);</code></pre>
+<pre class="init"><code>var result = pluralize(wordInput, numberInput);
 alert(result);</pre></code>
 
+	<div>
+		<fieldset>
+			<div>
+				<label>Word:</label>
+				<input name="word" type="text" value="rabbit" />
+			</div>
+			<div>
+				<label>Number:</label>
+				<input name="number" type="text" value="10" />
+			</div>
+		</fieldset>
+	</div>
+
 	<a class="button run-code">Run</a>
+
 </section>
 
 
 <section>
-	<h1>Function</h1>
-	<h3>Built-In Functions</h3>
-	<code>toUpperCase()</code>
 
-<pre><code>var name = "Siddhartha Gautama";
-var nameUpper = name.toUpperCase();
-alert(nameUpper);</pre></code>
-
-	<a class="button run-code">Run</a>
-</section>
-
-
-<section>
 	<h1>Function</h1>
 	<h3>Built-In Functions</h3>
 	<code>split()</code>
 
-<pre><code>var decimel = "2.5";
-var pieces = decimel.split(".");
+<pre><code>var decimal = "2.5";
+var pieces = decimal.split(".");
 alert(pieces[0]);</pre></code>
 
 	<a class="button run-code">Run</a>
-</section>
+</section>-->
 
 
 <section>
@@ -855,8 +862,7 @@ alert(isValid);</pre></code>
 		<li class="fragment">Stored in a variable (defined) and run later (called)</li>
 		<li class="fragment">Parameters are inputs required by the function</li>
 		<li class="fragment">The return value is the output of the function</li>
-		<li class="fragment">Most values have built-in functions (accessed with dot notation)</li>
-		<li class="fragment">Parameter names and internal variables can only be used in the body of the function</li>
+		<li class="fragment">Variables are not accessible outside the function</li>
 	</ul>
 	<p class="end-fragment fragment">~</p>
 
@@ -877,15 +883,21 @@ alert(isValid);</pre></code>
 
 
 <section>
-	<h1>Next steps...</h1>
+	<h2>Bringing it all together</h2>
+	<a href="http://jsfiddle.net/ZGCTa/2/">Full Example</a>
+</section>
 
-	<h3>jQuery</h3>
+
+<section>
+	<h1>DOM</h1>
+
+	<h3>Document Object Model</h3>
 	<ul>
-		<li>Add text to the page.</li>
-		<li>Add or remove elements.</li>
-		<li>Respond to mouse clicks.</li>
-		<li>Animate elements.</li>
-		<li>Load data in the background (AJAX).</li>
+		<li>Add text to the page</li>
+		<li>Add or remove elements</li>
+		<li>Respond to mouse clicks</li>
+		<li>Animate elements</li>
+		<li>Load data in the background (Ajax)</li>
 	</ul>
 
 </section>
@@ -909,11 +921,17 @@ alert(isValid);</pre></code>
 
 
 <section>
+
+	<h1>You're awesome!</h1>
+	<img src="images/darth-kiddo.jpg" />
+</section>
+
+
+<section>
 	<h1>Thank You</h1>
 
 	<address>
 		<h2>Raine Lourie</h2>
-		<a href="http://boulderwebguru.com">boulderwebguru.com</a>
 	</address>
 
 </section>
